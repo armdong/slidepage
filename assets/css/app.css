@@ -1,0 +1,25 @@
+html, body { position: relative; width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: Arial; }
+.viewport { display: -webkit-box; position: relative; width: 500%; height: 100%; overflow: hidden; pointer-events: none; -webkit-transform: translate3d(0, 0, 0); backface-visibility: hidden; }
+.pageview { -webkit-box-flex: 1; width: 0; }
+.pageview:nth-of-type(1) { background-color: #3b76c0; }
+.pageview:nth-of-type(2) { background-color: #58c03b; }
+.pageview:nth-of-type(3) { background-color: #c03b25; }
+.pageview:nth-of-type(4) { background-color: #e0a718; }
+.pageview:nth-of-type(5) { background-color: #c03eac; }
+.pagenumber { display: -webkit-box; position: absolute; bottom: 2em; left: 35%; height: 2em; width: 30%; }
+.pagenumber div { position: relative; -webkit-box-flex: 1; width: 0; }
+.pagenumber .now:after { background: rgba(255, 255, 255, 1) !important; }
+.pagenumber div:after { position: absolute; top: 50%; left: 50%; content: ''; width: 0.4em; height: 0.4em; margin-top: -0.2em; margin-left: -0.2em; background: rgba(255, 255, 255, 0.5); border-radius: 2em; }
+h3 { text-align: center; font-family: 'Microsoft Yahei', Arial; color: #fff; font-size: 1.7em; font-weight: normal; padding: 1em 0; margin: 0; }
+@media screen and (max-width: 360px) {
+	html, body { font-size: 15px; }
+}
+@media screen and (min-width: 360px) and (max-width: 400px) {
+	html, body { font-size: 16px; }
+}
+@media screen and (min-width: 400px) and (max-width: 460px) {
+	html, body { font-size: 18px; }
+}
+@media screen and (min-width: 460px) {
+	html, body { font-size: 24px; }
+}
